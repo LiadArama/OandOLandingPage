@@ -1,0 +1,15 @@
+.sub-title {
+  font-size: clamp(1rem, 5vw, 2rem);
+  font-weight: normal;
+  color: #3d3c3c;
+  line-height: 5rem;
+  text-align: right;
+  margin: 4rem auto;
+  padding-bottom: 3rem ;
+  padding-right: 3rem;
+  max-width: 1000px;
+}
+
+.fade-in {
+  --fade-duration: 1.6s;
+}
