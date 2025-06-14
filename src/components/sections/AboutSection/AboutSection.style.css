@@ -36,11 +36,14 @@
   -webkit-text-fill-color: transparent;
 }
 
+
+
 .about-description {
-  font-size: 1.25rem;
-  color: #475569;
+  font-size: 1.5rem;
+  color: #0D0D45;
   line-height: 1.6;
-  margin-bottom: 4rem;
+  margin-bottom: 0.9rem;
+  
 }
 
 .about-services {
@@ -48,6 +51,8 @@
   grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
   gap: 2rem;
   margin-bottom: 5rem;
+  margin-top: 4rem;
+
 }
 
 .service-item {

@@ -33,12 +33,23 @@ export default function AboutSection({ isVisible }) {
             360° Marketing That{" "}
             <span className="gradient-text">Actually Works</span>
           </h2>
-
-          <p className="about-description">
-            We're not just another digital agency. We're your strategic partners in building 
-            a digital presence that converts, engages, and grows. From PPC campaigns that deliver ROI 
-            to creative content that captivates audiences – we handle it all with precision and passion.
+          <b className="about-welcome"> היי, כיף שהגעתם!</b>
+<b>
+          <p className="about-description" >
+ אנחנו O&O, סוכנות דיגיטל שחושבת רחב ופועלת מדויק. <br />
+ המומחיות שלנו היא לבנות עבור כל לקוח מעטפת 360 שמכסה את כל הצרכים השיווקיים של העסק – מאסטרטגיה חכמה, דרך קריאייטיב שמתחבר לקהל, ועד ביצוע ממוקד שמביא תוצאות בשטח. <br />
           </p>
+          <p className="about-description">
+            אנחנו מלווים את הלקוחות שלנו מקצה לקצה: <br/>
+ מניהול עמודים ברשתות החברתיות, יצירת תוכן קריאייטיבי, קופירייטינג, קמפיינים ממומנים בכל הפלטפורמות המובילות, ועד לניתוח נתונים ושיפור מתמיד של הביצועים. <br/>
+          </p>
+          <p className="about-description">
+            העבודה שלנו תמיד מותאמת אישית. אין אצלנו שבלונות. <br/>
+ אנחנו נכנסים לעומק של כל מותג, מבינים את המטרות העסקיות, ויוצרים מהן שפה שיווקית מדויקת שמובילה את הקהל הנכון עם מיקוד אחד ברור – תוצאות.
+            </p>
+            <p className="about-description" style={{marginTop:"1.3rem", marginBottom:"0.2rem"}}>מהר מאוד תבינו , O&O זה לא רק דיגיטל. <br />
+זה מערכת יחסים. מוכנים להתאהב?</p>
+</b>
 
           <div className="about-services">
             <ServiceItem delay={0.2} title="Strategic Focus" text="Data-driven strategies that align with your business goals" color="blue" />

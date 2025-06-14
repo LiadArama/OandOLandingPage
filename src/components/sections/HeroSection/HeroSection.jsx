@@ -2,6 +2,7 @@ import React from "react";
 import { motion } from "framer-motion";
 import logo from '../../../assets/OObluebackground.png'
 import "./HeroSection.style.css";
+import '../../../styles/Global.style.css';
 
 export default function HeroSection() {
   return (
@@ -12,21 +13,13 @@ export default function HeroSection() {
           transition={{ duration: 20, repeat: Infinity, ease: "linear" }}
           className="hero-circle-blue"
         />
-        <motion.div
-          animate={{ y: [0, -20, 0], x: [0, 20, 0] }}
-          transition={{ duration: 15, repeat: Infinity, ease: "easeInOut" }}
-          className="hero-circle-purple"
-        />
-        <div className="hero-shape-1" />
-        <div className="hero-shape-2" />
-        <div className="hero-shape-3" />
       </div>
 
       <div className="hero-content">
         <motion.div
           initial={{ opacity: 0, y: -30 }}
           animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.8 }}
+          transition={{ duration: 2, delay: 0.8 }}
           className="hero-logo"
         >
           <motion.div
@@ -35,7 +28,6 @@ export default function HeroSection() {
             className="hero-logo-inner"
           >
             <img
-            //   src="OandOLandingPage/src/styles/6d9613dd7_OObluebackground.png"
               src={logo}
               alt="O&O DIGITAL FUTURE Logo"
               className="hero-logo-img"
@@ -46,21 +38,23 @@ export default function HeroSection() {
         <motion.h1
           initial={{ opacity: 0, y: 30 }}
           animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.8, delay: 0.2 }}
+          transition={{ duration: 1.2, delay: 1 }}
           className="hero-title"
         >
-          We Build the{" "}
+       We Build The{" "} <br></br>
           <span className="hero-gradient-text">Digital Future</span>
+
         </motion.h1>
 
         <motion.p
           initial={{ opacity: 0, y: 30 }}
           animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.8, delay: 0.4 }}
-          className="hero-subtitle"
+          transition={{ duration: 0.8, delay: 1.8 }}
+          className="hero-subtitle english-text"
         >
-          העתיד הדיגיטלי שלך מתחיל כאן <br></br> 
- ואנחנו יודעים לבנות אותו
+      Your digital future starts here
+
+
 
         </motion.p>
       </div>

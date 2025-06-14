@@ -6,7 +6,7 @@
 }
 
 body {
-  font-family: 'Heebo', sans-serif;
+  font-family: 'Heebo', ui-sans-serif;
   background-color: #fff;
   color: #333;
   direction: rtl;
@@ -19,6 +19,10 @@ body {
   max-width: 1200px;
   padding: 6rem 2rem;
   margin: 0 auto;
+}
+
+.english-text {
+  direction: ltr;
 }
 
 /* Unified fade-in (no layout shift) */
