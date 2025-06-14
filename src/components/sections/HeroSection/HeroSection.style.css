@@ -1,0 +1,122 @@
+.hero-section {
+  position: relative;
+  min-height: 100vh;
+  background: linear-gradient(to bottom right, #0f172a, #1e3a8a, #4338ca);
+  overflow: hidden;
+}
+
+.hero-background {
+  position: absolute;
+  inset: 0;
+}
+
+.hero-circle-blue {
+  position: absolute;
+  top: 5rem;
+  right: 5rem;
+  width: 8rem;
+  height: 8rem;
+  background-color: rgba(59, 130, 246, 0.1);
+  border-radius: 9999px;
+  filter: blur(20px);
+}
+
+.hero-circle-purple {
+  position: absolute;
+  bottom: 8rem;
+  left: 4rem;
+  width: 6rem;
+  height: 6rem;
+  background-color: rgba(168, 85, 247, 0.1);
+  border-radius: 9999px;
+  filter: blur(16px);
+}
+
+.hero-shape-1 {
+  position: absolute;
+  top: 25%;
+  left: 25%;
+  width: 0.5rem;
+  height: 0.5rem;
+  background-color: #60a5fa;
+  border-radius: 9999px;
+  animation: pulse 2s infinite;
+}
+
+.hero-shape-2 {
+  position: absolute;
+  top: 33%;
+  right: 33%;
+  width: 0.25rem;
+  height: 0.25rem;
+  background-color: #a78bfa;
+  border-radius: 9999px;
+  animation: ping 2s infinite;
+}
+
+.hero-shape-3 {
+  position: absolute;
+  bottom: 25%;
+  right: 25%;
+  width: 0.75rem;
+  height: 0.75rem;
+  background-color: #6366f1;
+  border-radius: 9999px;
+  animation: bounce 2s infinite;
+}
+
+.hero-content {
+  position: relative;
+  z-index: 10;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  text-align: center;
+  padding: 5rem 1rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.hero-logo {
+  margin-bottom: 3rem;
+  perspective: 1000px;
+}
+
+.hero-logo-inner {
+  display: flex;
+  justify-content: center;
+  transform-style: preserve-3d;
+}
+
+.hero-logo-img {
+  height: 4rem;
+  filter: brightness(0) invert(1);
+}
+
+.hero-title {
+  font-size: clamp(2rem, 6vw, 5rem);
+  font-weight: 900;
+  color: #fff;
+  margin-bottom: 2rem;
+  line-height: 1.2;
+  padding-top: 3rem;
+}
+
+.hero-gradient-text {
+  background: linear-gradient(to right, #60a5fa, #a78bfa, #6366f1);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.hero-subtitle {
+  text-align: right;
+  align-items: right;
+  padding-top: 5rem;
+  font-size: clamp(1.25rem, 3vw, 2rem);
+  color: #cbd5e1;
+  max-width: 48rem;
+  /* margin: 0 auto; */
+  line-height: 2;
+}
