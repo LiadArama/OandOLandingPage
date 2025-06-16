@@ -1,5 +1,6 @@
 import React from "react";
 import { motion } from "framer-motion";
+import ServiceCard from "./components/ServiceCard";
 import "./ServicesSection.style.css";
 
 export default function ServicesSection({ isVisible }) {
@@ -32,19 +33,6 @@ export default function ServicesSection({ isVisible }) {
 
   return (
     <section id="services" className="services-section">
-      <div className="services-background">
-        <motion.div
-          animate={{ rotate: 360 }}
-          transition={{ duration: 50, repeat: Infinity, ease: "linear" }}
-          className="services-circle-top"
-        />
-        <motion.div
-          animate={{ rotate: -360 }}
-          transition={{ duration: 60, repeat: Infinity, ease: "linear" }}
-          className="services-circle-bottom"
-        />
-      </div>
-
       <div className="services-content">
         <motion.div
           initial={{ opacity: 0, y: 30 }}
@@ -53,39 +41,25 @@ export default function ServicesSection({ isVisible }) {
           className="services-header"
         >
           <div className="services-badge">What We Do</div>
-
           <h2 className="services-title">
             Complete Digital Marketing{" "}
             <span className="gradient-services">Solutions</span>
           </h2>
-
           <p className="services-description">
             From strategy to execution, we cover every aspect of your digital marketing needs 
             with precision, creativity, and measurable results.
           </p>
         </motion.div>
 
-        <div className="services-grid">
+        <div className="services-horizontal-scroll">
           {services.map((service, index) => (
             <motion.div
               key={service.title}
               initial={{ opacity: 0, y: 30 }}
               animate={isVisible.services ? { opacity: 1, y: 0 } : {}}
               transition={{ duration: 0.6, delay: index * 0.1 }}
-              className="service-card"
             >
-              <div className={`service-icon ${service.gradientClass}`}></div>
-              <h3 className="service-card-title">{service.title}</h3>
-              <p className="service-card-desc">{service.description}</p>
-
-              <ul className="service-features">
-                {service.features.map((feature, idx) => (
-                  <li key={idx} className="service-feature-item">
-                    <div className={`feature-dot ${service.gradientClass}`} />
-                    <span>{feature}</span>
-                  </li>
-                ))}
-              </ul>
+              <ServiceCard {...service} />
             </motion.div>
           ))}
         </div>
