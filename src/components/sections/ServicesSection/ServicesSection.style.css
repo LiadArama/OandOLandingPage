@@ -75,7 +75,7 @@
 }
 
 .service-card {
-  background: #ffffff;
+  background: linear-gradient(to bottom right, #d5b4b4, #f1f5f9);
   padding: 2rem;
   border-radius: 1rem;
   box-shadow: 0 10px 25px rgba(0, 0, 0, 0.05);

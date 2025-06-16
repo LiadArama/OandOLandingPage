@@ -163,3 +163,50 @@
   color: #475569;
   line-height: 1.5;
 }
+
+
+.carousel-wrapper {
+  padding-top:8rem;
+  overflow: hidden;
+  width: 100%;
+  /* padding: 2rem 0; */
+  background: white;
+}
+
+.carousel-track {
+  display: flex;
+  width: calc(200%); /* Twice the normal width because we're repeating the logos */
+  animation: scroll-left 30s linear infinite;
+}
+
+.carousel-item {
+  flex: 0 0 auto;
+  width: 150px;
+  margin: 0 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.carousel-item img {
+  max-width: 100%;
+  height: auto;
+  object-fit: contain;
+  filter: grayscale(100%); /* Optional: makes them all gray for more luxury feel */
+  opacity: 0.8;
+  transition: all 0.3s ease;
+}
+
+.carousel-item img:hover {
+  filter: grayscale(0%);
+  opacity: 1;
+}
+
+@keyframes scroll-left {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
