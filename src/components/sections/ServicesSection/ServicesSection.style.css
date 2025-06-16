@@ -49,14 +49,18 @@
 }
 
 .services-title {
-  font-size: clamp(2rem, 5vw, 3rem);
+  font-family: 'Poppins', sans-serif;
+  font-size: clamp(4rem, 5vw, 5rem);
   font-weight: 900;
   color: #0f172a;
   margin-bottom: 2rem;
+  direction: 'ltr';
+  text-align: center;
 }
 
 .gradient-services {
-  background: linear-gradient(to right, #9333ea, #6366f1);
+ 
+  background: linear-gradient(to right,  #2d6ab5, #46299e, #71728f);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
@@ -71,11 +75,11 @@
 .services-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  gap: 2rem;
+  gap: 10rem;
 }
 
 .service-card {
-  background: linear-gradient(to bottom right, #d5b4b4, #f1f5f9);
+  background: linear-gradient(to bottom right, #ffffff, #f1f5f9);
   padding: 2rem;
   border-radius: 1rem;
   box-shadow: 0 10px 25px rgba(0, 0, 0, 0.05);
@@ -111,6 +115,7 @@
 }
 
 .service-card-title {
+  font-family: 'Poppins', sans-serif;
   font-size: 1.5rem;
   font-weight: 700;
   color: #0f172a;

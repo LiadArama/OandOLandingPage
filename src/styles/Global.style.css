@@ -31,7 +31,6 @@ body {
   transform: translateY(30px);
   animation: fadeInBottom var(--fade-duration, 3s) var(--animation-delay, 0.7s) forwards;
   will-change: opacity, transform;
-  
 }
 
 @keyframes fadeInBottom {
