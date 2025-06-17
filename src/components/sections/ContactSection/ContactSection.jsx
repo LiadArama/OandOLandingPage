@@ -8,7 +8,6 @@ export default function ContactSection({ isVisible }) {
     phone: "",
     email: "",
     company: "",
-    message: ""
   });
   const [isSubmitted, setIsSubmitted] = useState(false);
 
@@ -28,25 +27,13 @@ export default function ContactSection({ isVisible }) {
         phone: "",
         email: "",
         company: "",
-        message: ""
       });
     }, 3000);
   };
 
   return (
     <section id="contact" className="contact-section">
-      <div className="contact-background">
-        <motion.div
-          animate={{ scale: [1, 1.1, 1], opacity: [0.1, 0.2, 0.1] }}
-          transition={{ duration: 8, repeat: Infinity, ease: "easeInOut" }}
-          className="contact-circle-blue"
-        />
-        <motion.div
-          animate={{ scale: [1.1, 1, 1.1], opacity: [0.1, 0.15, 0.1] }}
-          transition={{ duration: 10, repeat: Infinity, ease: "easeInOut" }}
-          className="contact-circle-purple"
-        />
-      </div>
+      <div className="contact-background"></div>
 
       <div className="contact-content">
         <motion.div
@@ -55,17 +42,12 @@ export default function ContactSection({ isVisible }) {
           transition={{ duration: 0.8 }}
           className="contact-header"
         >
-          <div className="contact-badge">Get Started</div>
-
-          <h2 className="contact-title">
-            Ready to{" "}
-            <span className="gradient-contact">Transform</span>{" "}
-            Your Digital Presence?
+          <h2 className="hebrew-section-title hebrew-text white-background-text">
+            עכשיו{" "}
+            <span className="title-gradient">תורנו</span>{" "}
+            להכיר{" "}
+            <span className="title-gradient">אתכם</span>{" "}
           </h2>
-
-          <p className="contact-description">
-            Let's discuss your goals and create a customized strategy that delivers real results.
-          </p>
         </motion.div>
 
         <motion.div
@@ -86,10 +68,9 @@ export default function ContactSection({ isVisible }) {
                 <Input label="Company Name" value={formData.company} onChange={val => handleChange("company", val)} />
               </div>
 
-              <Textarea label="Tell us about your project" value={formData.message} onChange={val => handleChange("message", val)} />
-
+          
               <button type="submit" className="submit-btn">
-                Let's Talk
+                שלחו לי פרטים
               </button>
             </form>
           ) : (
@@ -119,11 +100,3 @@ function Input({ label, value, onChange, required = false, type = "text" }) {
   );
 }
 
-function Textarea({ label, value, onChange }) {
-  return (
-    <div className="input-wrapper">
-      <label>{label}</label>
-      <textarea value={value} onChange={e => onChange(e.target.value)} rows={4} />
-    </div>
-  );
-}

@@ -1,6 +1,6 @@
 .footer-section {
   padding: 6rem 1rem;
-  background: white;
+  background: #0D0D45;
 }
 
 .footer-content {
@@ -93,8 +93,9 @@
 }
 
 .footer-logo img {
-  height: 3rem;
+  height: 6rem;
   margin: 2rem auto;
+  filter: brightness(0) invert(1);
 }
 
 .footer-bottom p {

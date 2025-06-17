@@ -6,11 +6,8 @@
 }
 
 body {
-  font-family: 'Heebo', ui-sans-serif;
   background-color: #fff;
   color: #333;
-  direction: rtl;
-
   font-size: clamp(1rem, 5vw, 2rem);
   line-height: 1.6;
 }
@@ -21,8 +18,38 @@ body {
   margin: 0 auto;
 }
 
-.english-text {
-  direction: ltr;
+.blue-background-text {
+  color: white;
+}
+
+.white-background-text {
+  color: #0f172a;
+}
+
+.section-title {
+  font-family: "Poppins", sans-serif;
+  font-size: clamp(1.25rem, 5vw, 5rem);
+  font-weight: 900;
+  margin-bottom: 2rem;
+  text-align: center;
+}
+
+.hebrew-section-title{
+  font-size: clamp(1.25rem, 5vw, 5rem);
+  font-weight: 900;
+  margin-bottom: 2rem;
+  text-align: center;
+}
+
+.title-gradient {
+  background: linear-gradient(to right, #2d6ab5, #46299e, #71728f);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.hebrew-text {
+  font-family: "Heebo", sans-serif;
+  direction: rtl;
 }
 
 /* Unified fade-in (no layout shift) */

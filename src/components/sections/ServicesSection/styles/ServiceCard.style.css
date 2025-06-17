@@ -24,32 +24,9 @@
   font-size: 3rem;
   font-family: 'Poppins', sans-serif;
   font-weight: 500;
-  color: #0f172a;
+  /* color: #0f172a; */
   margin-bottom: 1rem;
   text-align: center;
-  direction: 'ltr'
-}
-
-.title-gradient-text {
-  background: linear-gradient(to bottom, #d0d1d8, #290e95, #a855f7);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-}
-
-.gradient-blue {
-  background: linear-gradient(to right, #3b82f6, #06b6d4);
-}
-
-.gradient-purple {
-  background: linear-gradient(to right, #9333ea, #ec4899);
-}
-
-.gradient-indigo {
-  background: linear-gradient(to right, #6366f1, #9333ea);
-}
-
-.gradient-green {
-  background: linear-gradient(to right, #22c55e, #14b8a6);
 }
 
 

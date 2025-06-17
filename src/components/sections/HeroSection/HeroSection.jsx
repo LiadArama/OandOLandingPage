@@ -39,7 +39,7 @@ export default function HeroSection() {
           initial={{ opacity: 0, y: 30 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 1.2, delay: 1 }}
-          className="hero-title"
+          className="hero-title blue-background-text"
         >
        We Build The{" "} <br></br>
           <span className="hero-gradient-text">Digital Future</span>
@@ -50,7 +50,7 @@ export default function HeroSection() {
           initial={{ opacity: 0, y: 30 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, delay: 1.8 }}
-          className="hero-subtitle english-text"
+          className="hero-subtitle"
         >
       Your digital future starts here
 

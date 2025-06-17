@@ -20,17 +20,13 @@ export default function AboutSection({ isVisible }) {
 
   return (
     <section id="about" className="about-section">
-      <div className="about-content">
+      <div className="about-content hebrew-text">
         <motion.div
           initial={{ opacity: 0, y: 30 }}
           animate={isVisible.about ? { opacity: 1, y: 0 } : {}}
           transition={{ duration: 0.8 }}
           className="about-header"
         >
-          {/* <h2 className="about-title">
-            360° Marketing That{" "}
-            <span className="gradient-text">Actually Works</span>
-          </h2> */}
           <b className="about-welcome"> היי, כיף שהגעתם!</b>
           <b>
             <p className="about-description">
