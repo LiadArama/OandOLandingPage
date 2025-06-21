@@ -1,9 +1,0 @@
-.opening-paragraph {
-  font-size: clamp(0.7rem, 5vw, 1.25rem);
-  line-height: 2.2rem;
-  color: #332e2e;
-  direction: rtl;
-  margin: 3rem auto;
-  max-width: 900px;
-  text-align: right;
-}
