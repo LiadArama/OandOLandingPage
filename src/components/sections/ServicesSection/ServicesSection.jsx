@@ -2,31 +2,27 @@ import { motion } from "framer-motion";
 import "../../../styles/Global.style.css";
 import "./ServicesSection.style.css";
 import "./styles/ServiceCard.style.css";
-import ppcPic from "../../../assets/ppc-service.png";
-import socialMediaPic from "../../../assets/social-media.png";
-import strategyPic from "../../../assets/strategy.png";
-import creativeCopywritingPic from "../../../assets/creative-copywriting.png";
-
+import ppcPic from "../../../assets/services-images/ppc-service.png";
+import socialMediaPic from "../../../assets/services-images/social-media.png";
+import strategyPic from "../../../assets/services-images/strategy.png";
+import creativeCopywritingPic from "../../../assets/services-images/creative-copywriting.png";
 export default function ServicesSection({ isVisible }) {
   const services = [
     {
       title: "PPC Campaigns",
       description: `ניהול קמפיינים בפייסבוק, אינסטגרם, גוגל, טיקטוק ועוד עם דגש על יצירת לידים איכותיים. לא נסתפק רק בקליקים, אנחנו שואפים להחזר השקעה גבוה וניצול מקסימלי של התקציב.`,
-      gradientClass: "gradient-blue",
       icon: ppcPic,
     },
     {
       title: "Social Media Management",
       description: ` ניהול עמודים, יצירת תוכן שוטף, עיצוב גרפי ואינטראקציה עם הקהל. 
  הכול נעשה תוך התאמה אישית לקול ולשפה של העסק שלך, כדי להפוך עוקבים למעורבים ומעורבים ללקוחות.`,
-      gradientClass: "gradient-purple",
       icon: socialMediaPic,
     },
     {
       title: "Creative & Copywriting",
       description: ` בין אם זו מודעה, דף נחיתה או סרטון.
 הקריאייטיב שלנו לא רק יפה, הוא ממוקד תוצאה. אנחנו יודעים איך לגרום לקהל שלך לעצור, להתעניין ולפעול.`,
-      gradientClass: "gradient-indigo",
       icon: creativeCopywritingPic,
     },
     {
@@ -36,7 +32,6 @@ export default function ServicesSection({ isVisible }) {
 
 המטרה: לא סתם לפרסם, אלא לפעול חכם – עם כיוון ברור, מסר חד ותכנון שמייצר תוצאות אמיתיות.`,
       features: ["Market Analysis", "Competitive Research", "Growth Strategy", "Performance Consulting"],
-      gradientClass: "gradient-green",
       icon: strategyPic,
     },
   ];

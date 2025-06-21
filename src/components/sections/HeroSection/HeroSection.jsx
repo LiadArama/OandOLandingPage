@@ -4,7 +4,7 @@ import logo from '../../../assets/OObluebackground.png'
 import "./HeroSection.style.css";
 import '../../../styles/Global.style.css';
 
-export default function HeroSection() {
+export default function HeroSection({isVisible}) {
   return (
     <section className="hero-section">
       <div className="hero-background">
@@ -14,7 +14,7 @@ export default function HeroSection() {
           className="hero-circle-blue"
         />
       </div>
-
+      
       <div className="hero-content">
         <motion.div
           initial={{ opacity: 0, y: -30 }}

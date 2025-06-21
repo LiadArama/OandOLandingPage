@@ -1,0 +1,45 @@
+.carousel-wrapper {
+  padding-top:8rem;
+  overflow: hidden;
+  width: 100%;
+  /* padding: 2rem 0; */
+  background: white;
+}
+
+.carousel-track {
+  display: flex;
+  width: fit-content;
+  animation: scroll-left 30s linear infinite;
+}
+
+.carousel-track:hover {
+  filter: grayscale(0%);
+  opacity: 1;
+
+}
+
+
+.carousel-item {
+  flex: 0 0 auto;
+  width: 150px;
+  margin: 0 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.carousel-item img {
+  max-width: 100%;
+  height: auto;
+  object-fit: contain;
+  opacity: 0.8;
+}
+
+@keyframes scroll-left {
+  0% {
+    transform: translateX(0%);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}

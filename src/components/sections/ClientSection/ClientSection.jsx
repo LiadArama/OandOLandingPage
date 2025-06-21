@@ -1,7 +1,7 @@
 import React from "react";
 import { motion } from "framer-motion";
+import LogoCarousel from "../../util-components/LogoCarousel/LogoCarousel";
 import "./ClientSection.style.css";
-import { LogoCarousel } from "../AboutSection/AboutSection";
 
 export default function ClientSection({ isVisible }) {
 

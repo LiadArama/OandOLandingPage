@@ -1,5 +1,6 @@
 import React from "react";
 import { motion } from "framer-motion";
+import LogoCarousel from "../../util-components/LogoCarousel/LogoCarousel";
 import "./AboutSection.style.css";
 
 export default function AboutSection({ isVisible }) {
@@ -62,51 +63,3 @@ export default function AboutSection({ isVisible }) {
   );
 }
 
-export function LogoCarousel() {
-  const logos = [
-    { name: "Google", src: "/assets/google-logo.png" },
-    { name: "Meta", src: "/assets/logos/meta.png" },
-    { name: "Shopify", src: "/assets/logos/shopify.png" },
-    { name: "Hubspot", src: "/assets/logos/hubspot.png" },
-    { name: "Google Ads", src: "/assets/logos/google-ads.png" },
-    { name: "Facebook Ads", src: "/assets/logos/facebook-ads.png" },
-    { name: "LinkedIn", src: "/assets/logos/linkedin.png" },
-    { name: "GA4", src: "/assets/logos/ga4.png" },
-    { name: "Mailchimp", src: "/assets/logos/mailchimp.png" },
-  ];
-
-  // Repeat the logos array to make it continuous loop visually
-  const repeatedLogos = [...logos, ...logos];
-
-  return (
-    <div className="carousel-wrapper">
-      <div className="carousel-track">
-        {repeatedLogos.map((logo, index) => (
-          <div className="carousel-item" key={index}>
-            <img src={logo.src} alt={logo.name} />
-          </div>
-        ))}
-      </div>
-    </div>
-  );
-}
-function ServiceItem({ delay, title, text, color }) {
-  const colorClass = {
-    blue: "service-icon-blue",
-    purple: "service-icon-purple",
-    indigo: "service-icon-indigo",
-  }[color];
-
-  return (
-    <motion.div
-      initial={{ opacity: 0, y: 20 }}
-      animate={{ opacity: 1, y: 0 }}
-      transition={{ duration: 0.6, delay }}
-      className="service-item"
-    >
-      <div className={`service-icon ${colorClass}`} />
-      <h3 className="service-title">{title}</h3>
-      <p className="service-text">{text}</p>
-    </motion.div>
-  );
-}
