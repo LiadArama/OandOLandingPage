@@ -55,9 +55,9 @@
 }
 
 .hero-subtitle {
-  font-family: 'Poppins', sans-serif;
-  font-weight: 500;
-  font-size: clamp(1.5rem, 5vw, 4.25rem);
+  /* font-family: 'Poppins', sans-serif; change to poppins 100 */
+  font-weight: 100;
+  font-size: clamp(1.5rem, 5vw, 3.25rem);
   color: #cbd5e1;
   max-width: 100rem;
   line-height: 2;

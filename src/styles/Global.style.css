@@ -48,7 +48,7 @@ body {
 }
 
 .hebrew-text {
-  font-family: "Heebo", sans-serif;
+  font-family: "system-ui", sans-serif;
   direction: rtl;
 }
 

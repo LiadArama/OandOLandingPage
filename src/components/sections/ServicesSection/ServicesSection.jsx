@@ -54,7 +54,7 @@ export default function ServicesSection({ isVisible }) {
             How We <span className="title-gradient">Build The Future</span>
           </h2>
         </motion.div>
-
+{/*USE THE NEW CARDS IN THE NEW WEBSITE AND SPACE THEM EVENLY LIKE HERE*/}
         <div className="services-grid">
           {services.map((service, index) => (
             <motion.div
@@ -71,6 +71,9 @@ export default function ServicesSection({ isVisible }) {
           ))}
         </div>
       </div>
+      PLACE HOLDER FOR FOUNDERS SECTION.
     </section>
+
+    
   );
 }

@@ -13,14 +13,16 @@
 }
 
 .about-welcome{
-  font-size:  clamp(1.5rem, 2.5vw, 2rem);
+  font-size:  clamp(1.7rem, 3vw, 2.3rem);
+  font-weight:500;
   color: #0D0D45;
   line-height: 1.6;
   margin-bottom: 0.9rem;
 }
 
 .about-description {
-  font-size: clamp(1rem, 2vw, 1.5rem);
+  font-size: clamp(1rem, 2.2vw, 1.5rem);
+  font-weight: 400;
   color: #0D0D45;
   line-height: 1.6;
   margin-bottom: 0.9rem;

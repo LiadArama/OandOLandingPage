@@ -9,7 +9,7 @@
 .carousel-track {
   display: flex;
   width: fit-content;
-  animation: scroll-left 30s linear infinite;
+  animation: scroll-left 5s linear infinite;
 }
 
 .carousel-track:hover {
