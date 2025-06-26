@@ -17,7 +17,7 @@
   width: 20rem;
   height: 20rem;
   border-radius: 9999px;
-  background: linear-gradient(to right, #0D0D45);
+  background: linear-gradient(to right, #0d0d45);
 }
 
 .services-circle-bottom {
@@ -27,7 +27,7 @@
   width: 20rem;
   height: 20rem;
   border-radius: 9999px;
-  background: linear-gradient(to right, #0D0D45);
+  background: linear-gradient(to right, #0d0d45);
 }
 
 .services-content {
@@ -42,3 +42,17 @@
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   gap: 10rem;
 }
+
+/* Icon color classes */
+.text-pink-600 { color: #db2777; }
+.text-blue-600 { color: #2563eb; }
+.text-purple-600 { color: #7c3aed; }
+.text-green-600 { color: #059669; }
+
+/* Icon background classes */
+.bg-pink-100 { background-color: #fce7f3; }
+.bg-blue-100 { background-color: #dbeafe; }
+.bg-purple-100 { background-color: #ede9fe; }
+.bg-green-100 { background-color: #d1fae5; }
+
+

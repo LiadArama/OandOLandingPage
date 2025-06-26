@@ -2,38 +2,39 @@ import { motion } from "framer-motion";
 import "../../../styles/Global.style.css";
 import "./ServicesSection.style.css";
 import "./styles/ServiceCard.style.css";
-import ppcPic from "../../../assets/services-images/ppc-service.png";
-import socialMediaPic from "../../../assets/services-images/social-media.png";
-import strategyPic from "../../../assets/services-images/strategy.png";
-import creativeCopywritingPic from "../../../assets/services-images/creative-copywriting.png";
+import ServiceCard from "./components/ServiceCard";
+import { Palette, MousePointer, Users, BarChart3 } from "lucide-react";
+
 export default function ServicesSection({ isVisible }) {
   const services = [
     {
-      title: "PPC Campaigns",
-      description: `ניהול קמפיינים בפייסבוק, אינסטגרם, גוגל, טיקטוק ועוד עם דגש על יצירת לידים איכותיים. לא נסתפק רק בקליקים, אנחנו שואפים להחזר השקעה גבוה וניצול מקסימלי של התקציב.`,
-      icon: ppcPic,
-    },
-    {
-      title: "Social Media Management",
-      description: ` ניהול עמודים, יצירת תוכן שוטף, עיצוב גרפי ואינטראקציה עם הקהל. 
- הכול נעשה תוך התאמה אישית לקול ולשפה של העסק שלך, כדי להפוך עוקבים למעורבים ומעורבים ללקוחות.`,
-      icon: socialMediaPic,
-    },
-    {
+      icon: Palette,
       title: "Creative & Copywriting",
-      description: ` בין אם זו מודעה, דף נחיתה או סרטון.
-הקריאייטיב שלנו לא רק יפה, הוא ממוקד תוצאה. אנחנו יודעים איך לגרום לקהל שלך לעצור, להתעניין ולפעול.`,
-      icon: creativeCopywritingPic,
+      description: "קריאייטיב ותוכן שמעוררים השראה ומניעים לפעולה",
+      iconBg: "bg-pink-100",
+      iconColor: "text-pink-600"
     },
     {
-      title: "Strategy & Consulting",
-      description: `אסטרטגיה טובה היא הבסיס לכל מהלך שיווקי מצליח.
-אנחנו בונים יחד איתך תוכנית פעולה שמבוססת על הבנת קהל היעד, הגדרת מטרות ברורה, וניתוח עומק של הסביבה העסקית והמתחרים.
-
-המטרה: לא סתם לפרסם, אלא לפעול חכם – עם כיוון ברור, מסר חד ותכנון שמייצר תוצאות אמיתיות.`,
-      features: ["Market Analysis", "Competitive Research", "Growth Strategy", "Performance Consulting"],
-      icon: strategyPic,
+      icon: MousePointer,
+      title: "PPC Campaigns",
+      description: "קמפיינים ממומנים חכמים עם ROI מקסימלי",
+      iconBg: "bg-blue-100",
+      iconColor: "text-blue-600"
     },
+    {
+      icon: Users,
+      title: "Social Media Management",
+      description: "ניהול רשתות חברתיות שבונה קהילה ומחזק מותג",
+      iconBg: "bg-purple-100",
+      iconColor: "text-purple-600"
+    },
+    {
+      icon: BarChart3,
+      title: "Strategy & Consulting",
+      description: "ייעוץ אסטרטגי מקצועי לצמיחה בת קיימא",
+      iconBg: "bg-green-100",
+      iconColor: "text-green-600"
+    }
   ];
 
   return (
@@ -50,11 +51,10 @@ export default function ServicesSection({ isVisible }) {
           transition={{ duration: 0.8 }}
           className="services-header"
         >
-          <h2 className="section-title white-background-text">
+          <h2 className="section-title">
             How We <span className="title-gradient">Build The Future</span>
           </h2>
         </motion.div>
-{/*USE THE NEW CARDS IN THE NEW WEBSITE AND SPACE THEM EVENLY LIKE HERE*/}
         <div className="services-grid">
           {services.map((service, index) => (
             <motion.div
@@ -62,18 +62,19 @@ export default function ServicesSection({ isVisible }) {
               initial={{ opacity: 0, y: 30 }}
               animate={isVisible.services ? { opacity: 1, y: 0 } : {}}
               transition={{ duration: 0.6, delay: (index + 1) * 0.1 }}
-              className="service-card"
             >
-              <img src={service.icon} />
-              <h3 className="service-card-title title-gradient">{service.title}</h3>
-              <p className="service-card-desc hebrew-text">{service.description}</p>
+              <ServiceCard
+                icon={service.icon}
+                iconBg={service.iconBg}
+                iconColor={service.iconColor}
+                title={service.title}
+                description={service.description}
+              />
             </motion.div>
           ))}
         </div>
       </div>
       PLACE HOLDER FOR FOUNDERS SECTION.
     </section>
-
-    
   );
 }
