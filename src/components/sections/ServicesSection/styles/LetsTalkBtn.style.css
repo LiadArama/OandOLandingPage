@@ -1,0 +1,65 @@
+.talk-button-wrapper {
+  text-align: center;
+  margin: 6rem 0;
+}
+
+.btn-primary::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -75%;
+  width: 50%;
+  height: 100%;
+  background: linear-gradient(
+    120deg,
+    rgba(255, 255, 255, 0.2) 0%,
+    rgba(255, 255, 255, 0.6) 50%,
+    rgba(255, 255, 255, 0.2) 100%
+  );
+  transform: skewX(-25deg);
+}
+
+.btn-primary:hover::before {
+  animation: shine 0.9s ease forwards;
+}
+
+
+.btn-primary {
+  background: linear-gradient(to right, #2d6ab5, #46299e, #71728f);
+  color: white;
+  padding: 1.5rem 3rem;
+  font-size: 1.25rem;
+  font-weight: 600;
+  border-radius: 9999px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  flex-direction: row-reverse; /* 👈 this makes the icon go on the left of RTL text */
+  cursor: pointer;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+  border: none;
+  position: relative;
+  overflow: hidden;
+}
+
+.btn-primary:hover {
+  transform: scale(1.05);
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.2);
+}
+
+.btn-icon {
+  width: 1.25rem;
+  height: 1.25rem;
+  /* transform: rotate(180deg); ArrowLeft mimic */
+}
+
+@keyframes shine {
+  0% {
+    left: -75%;
+  }
+  100% {
+    left: 125%;
+  }
+}

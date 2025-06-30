@@ -5,6 +5,16 @@
   overflow: hidden;
 }
 
+.services-subtitle {
+  text-align: center;
+  /* align-items: center; */
+  max-width: 50rem;
+  word-wrap: break-word;
+  margin: 0 auto;
+  padding: 0 1rem;
+  font-size: clamp(1.25rem, 5vw, 2rem);
+}
+
 .services-background {
   position: absolute;
   inset: 0;
