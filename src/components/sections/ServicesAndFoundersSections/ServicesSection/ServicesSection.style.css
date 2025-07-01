@@ -1,9 +1,4 @@
-.services-section {
-  position: relative;
-  padding: 6rem 1rem;
-  background: #f8fafc;
-  overflow: hidden;
-}
+
 
 .services-subtitle {
   text-align: center;
@@ -15,37 +10,7 @@
   font-size: clamp(1.25rem, 5vw, 2rem);
 }
 
-.services-background {
-  position: absolute;
-  inset: 0;
-}
 
-.services-circle-top {
-  position: absolute;
-  top: -10rem;
-  right: -10rem;
-  width: 20rem;
-  height: 20rem;
-  border-radius: 9999px;
-  background: linear-gradient(to right, #0d0d45);
-}
-
-.services-circle-bottom {
-  position: absolute;
-  bottom: -10rem;
-  left: -10rem;
-  width: 20rem;
-  height: 20rem;
-  border-radius: 9999px;
-  background: linear-gradient(to right, #0d0d45);
-}
-
-.services-content {
-  position: relative;
-  z-index: 10;
-  max-width: 1200px;
-  margin: 0 auto;
-}
 
 .services-grid {
   display: grid;

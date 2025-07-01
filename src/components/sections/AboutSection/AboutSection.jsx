@@ -4,21 +4,6 @@ import LogoCarousel from "../../util-components/LogoCarousel/LogoCarousel";
 import "./AboutSection.style.css";
 
 export default function AboutSection({ isVisible }) {
-  const founders = [
-    {
-      name: "Oliver Schmidt",
-      role: "Co-Founder & Strategy Director",
-      bio: "15+ years in digital marketing strategy. Former head of digital at leading tech companies. Passionate about data-driven growth.",
-      initials: "OS",
-    },
-    {
-      name: "Olivia Chen",
-      role: "Co-Founder & Creative Director",
-      bio: "Award-winning creative director with expertise in brand storytelling. Previously led creative teams at top advertising agencies.",
-      initials: "OC",
-    },
-  ];
-
   return (
     <section id="about" className="about-section">
       <div className="about-content hebrew-text">
@@ -50,13 +35,6 @@ export default function AboutSection({ isVisible }) {
               זה מערכת יחסים. מוכנים להתאהב?
             </p>
           </b>
-        </motion.div>
-        <motion.div
-          initial={{ opacity: 0, y: 30 }}
-          animate={isVisible.about ? { opacity: 1, y: 0 } : {}}
-          transition={{ duration: 0.8 }}
-        >
-          <LogoCarousel /> {/** make this a little closer to the what we do section */}
         </motion.div>
       </div>
     </section>

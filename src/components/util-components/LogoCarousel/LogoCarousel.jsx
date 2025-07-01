@@ -1,3 +1,4 @@
+import {motion} from 'framer-motion';
 import "./LogoCarousel.style.css";
 function importAll(r) {
     return r.keys().map((item) => ({
@@ -10,12 +11,18 @@ const logos = importAll(
     require.context('../../../assets/logos', false, /\.(png|jpe?g|webp)$/)
 );
 
-function LogoCarousel() {
+function LogoCarousel({ isVisible }, backgroundColor) {
     // Repeat the logos array to make it continuous loop visually
     const repeatedLogos = [...logos, ...logos]; // repeat twice for seamless loop
-
     return (
-        <div className="carousel-wrapper">
+        <motion.div
+            initial={{ opacity: 0, y: 30 }}
+            animate={isVisible ? { opacity: 1, y: 0 } : {}}
+            transition={{ duration: 0.8 }}
+            className="carousel-wrapper"
+            style={{ backgroundColor }}
+        >
+
             <div className="carousel-track">
                 {repeatedLogos.map((logo, index) => (
                     <div className="carousel-item" key={index}>
@@ -23,7 +30,7 @@ function LogoCarousel() {
                     </div>
                 ))}
             </div>
-        </div>
+        </motion.div>
     );
 }
 
