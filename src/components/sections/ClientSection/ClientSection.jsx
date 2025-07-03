@@ -15,7 +15,7 @@ export default function ClientSection({ isVisible }) {
           transition={{ duration: 0.8 }}
           className="clients-header"
         >
-          
+          <LogoCarousel isVisible={true} backgroundColor="transparent" isClientLogos={true} />
           <h2 className="section-title blue-background-text">
             What{" "}
             <span className="title-gradient"> Our Clients</span>

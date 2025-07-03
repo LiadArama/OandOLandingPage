@@ -11,9 +11,13 @@ const logos = importAll(
     require.context('../../../assets/logos', false, /\.(png|jpe?g|webp)$/)
 );
 
-function LogoCarousel({ isVisible }, backgroundColor) {
+const clientLogos = importAll(
+    require.context('../../../assets/client-logos', false, /\.(png|jpe?g|webp)$/)
+);
+
+function LogoCarousel({ isVisible , backgroundColor, isClientLogos = false}) {
     // Repeat the logos array to make it continuous loop visually
-    const repeatedLogos = [...logos, ...logos]; // repeat twice for seamless loop
+    const repeatedLogos = isClientLogos ? [...clientLogos, ...clientLogos] : [...logos, ...logos];
     return (
         <motion.div
             initial={{ opacity: 0, y: 30 }}

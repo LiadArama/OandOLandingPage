@@ -24,40 +24,58 @@ export default function FoundersSection({ isVisible }) {
             className="founder-card omer-card"
             initial={{ opacity: 0, y: 30 }}
             animate={isVisible ? { opacity: 1, y: 0 } : {}}
-            transition={{ duration: 0.8, delay: 0.2 }}
+            transition={{
+              opacity: { duration: 0.8, delay: 0.2 },
+              y: { duration: 0.8, delay: 0.2 },
+            }}
+            whileHover={{
+              scale: 1.05,
+              boxShadow: "0px 20px 50px rgba(0,0,0,0.1)",
+            }}
+            whileTap={{ scale: 1.02 }}
           >
-            <div className="founder-img">
-              <img src={OmerPic} alt="Omer" />
+            <div className="founder-card-inner">
+              <div className="founder-img">
+                <img src={OmerPic} alt="Omer" />
+              </div>
+              <div className="founder-info">
+                <h3 className="founder-name">עומר</h3>
+                <p className="founder-role pink">קריאייטיב וקמפיינים</p>
+                <div className="founder-highlight">
+                  <span>מוביל את תחום היצירתיות והחדשנות</span>
+                </div>
+                <p className="founder-desc">מתמחה ביצירת קונספטים וקמפיינים שמניעים לפעולה ומייצרים באזז.</p>
+              </div>
             </div>
-            <h3 className="founder-name">עומר</h3>
-            <p className="founder-role pink">קריאייטיב וקמפיינים</p>
-            <div className="founder-highlight">
-              <span className="icon">
-                <svg>{/* Lightbulb icon */}</svg>
-              </span>
-              <span>מוביל את תחום היצירתיות והחדשנות</span>
-            </div>
-            <p className="founder-desc">מתמחה ביצירת קונספטים וקמפיינים שמניעים לפעולה ומייצרים באזז.</p>
           </motion.div>
           {/* Omri */}
           <motion.div
             className="founder-card omri-card"
             initial={{ opacity: 0, y: 30 }}
             animate={isVisible ? { opacity: 1, y: 0 } : {}}
-            transition={{ duration: 0.8, delay: 0.4 }}
+            transition={{
+              opacity: { duration: 0.8, delay: 0.2 },
+              y: { duration: 0.8, delay: 0.2},
+            }}
+            whileHover={{
+              scale: 1.05,
+              boxShadow: "0px 20px 50px rgba(0,0,0,0.1)",
+            }}
+            whileTap={{ scale: 1.02 }}
           >
-            <div className="founder-img">
-              <img src={OmriPic} alt="Omri" />
+            <div className="founder-card-inner">
+              <div className="founder-img">
+                <img src={OmriPic} alt="Omri" />
+              </div>
+              <div className="founder-info">
+                <h3 className="founder-name">עומרי</h3>
+                <p className="founder-role purple">אסטרטגיה וצמיחה</p>
+                <div className="founder-highlight">
+                  <span>מוביל את תחום האסטרטגיה והצמיחה העסקית</span>
+                </div>
+                <p className="founder-desc">מוביל את התכנון האסטרטגי, ניתוח נתונים, ואופטימיזציה לצמיחה ארוכת טווח.</p>
+              </div>
             </div>
-            <h3 className="founder-name">עומרי</h3>
-            <p className="founder-role purple">אסטרטגיה וצמיחה</p>
-            <div className="founder-highlight">
-              <span className="icon">
-                <svg>{/* Award icon */}</svg>
-              </span>
-              <span>מוביל את תחום האסטרטגיה והצמיחה העסקית</span>
-            </div>
-            <p className="founder-desc">מוביל את התכנון האסטרטגי, ניתוח נתונים, ואופטימיזציה לצמיחה ארוכת טווח.</p>
           </motion.div>
         </div>
       </div>

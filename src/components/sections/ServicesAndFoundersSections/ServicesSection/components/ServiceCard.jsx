@@ -13,10 +13,12 @@ export default function ServiceCard({
       <div className={`service-card-icon ${iconBg} rounded-full mx-auto mb-6`}>
         <Icon className={`${iconColor} transition-colors`} />
       </div>
-      <h3 className="service-card-title text-xl font-bold mb-4 text-gray-900">
-        <span className="title-gradient-text title-gradient">{title}</span>
-      </h3>
-      <p className="service-card-desc text-gray-600 leading-relaxed flex-grow hebrew-text">{description}</p>
+      <div className="card-text-wrapper">
+        <h3 className="service-card-title font-bold mb-4">
+          <span className="title-gradient-text title-gradient">{title}</span>
+        </h3>
+        <p className="service-card-desc leading-relaxed hebrew-text">{description}</p>
+      </div>
       {Array.isArray(features) && features.length > 0 && (
         <ul className="service-features">
           {features.map((feature, idx) => (

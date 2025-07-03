@@ -1,7 +1,10 @@
 .clients-section {
   padding: 6rem 1rem;
+  margin-top: 2rem;
   padding-top: 0; /* Adjust padding to fit the design - remove for extra space*/
-  background: #0D0D45;;
+  background: #0D0D45;
+  background-color: #0D0D45;
+
 }
 
 .clients-content {

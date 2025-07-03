@@ -1,4 +1,3 @@
-import {motion } from "framer-motion";
 import { useInView } from "react-intersection-observer";
 import "../../../styles/Global.style.css";
 import "./ServicesSection/ServicesSection.style.css";
@@ -11,7 +10,9 @@ import LogoCarousel from "../../util-components/LogoCarousel/LogoCarousel";
 export default function ServicesAndFoundersSection() {
   const [servicesRef, servicesInView] = useInView({ threshold: 0.1, triggerOnce: false });
   const [foundersRef, foundersInView] = useInView({ threshold: 0.1, triggerOnce: false });
-  const [logosRef, logosInView] = useInView({ threshold: 0.1, triggerOnce: false });
+  const [logosRefBetween, logosInViewBetween] = useInView({ threshold: 0.1, triggerOnce: false });
+  const [logosRefEnd, logosInViewEnd] = useInView({ threshold: 0.1, triggerOnce: false });
+
 
   return (
     <section id="services-founders" className="services-founders-section">
@@ -36,15 +37,16 @@ export default function ServicesAndFoundersSection() {
         <div ref={servicesRef} className="services-section">
           <ServicesSection isVisible={servicesInView} />
         </div>
-        <div ref={logosRef} className="logos-carousel">
-          <LogoCarousel isVisible={logosInView} backgroundColor="transparent" />
+        <div ref={logosRefBetween} className="logos-carousel">
+          <LogoCarousel isVisible={logosInViewBetween} backgroundColor="transparent" isClientLogos={false} />
         </div>
         <div ref={foundersRef} className="founders-section">
           <FoundersSection isVisible={foundersInView} />
         </div>
-                <div ref={logosRef} className="logos-carousel">
-          <LogoCarousel isVisible={logosInView} backgroundColor="transparent" />
+          <div ref={logosRefEnd} className="logos-carousel">
+          
         </div>
+        <br></br>
       </div>
     </section>
   );
