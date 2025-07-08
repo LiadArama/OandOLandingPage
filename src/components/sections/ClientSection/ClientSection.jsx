@@ -2,6 +2,7 @@ import React from "react";
 import { motion } from "framer-motion";
 import LogoCarousel from "../../util-components/LogoCarousel/LogoCarousel";
 import "./ClientSection.style.css";
+import TestimonialsCarousel from "./TestimonialCarousel";
 
 export default function ClientSection({ isVisible }) {
 
@@ -22,13 +23,22 @@ export default function ClientSection({ isVisible }) {
             {" "}Say
           </h2>
 
-        <h3> PLACEHOLDER FOR CLIENTS TALK ABOUT THE BRAND LIKE IN CONCEPT MEDIA WITH BLUE NAVY BACKGROUND AND WHITE TEXT - refer to concept  media website</h3>
+        
 
 
           
 
         </motion.div>
       </div>
+      <motion.div
+        initial={{ opacity: 0, y: 30 }}
+        animate={isVisible.clients ? { opacity: 1, y: 0 } : {}}
+        transition={{ duration: 0.8, delay: 0.2 }}
+        className="testimonial-carousel-wrapper"
+      >
+        <TestimonialsCarousel />
+      </motion.div>
+
     </section>
   );
 }
