@@ -10,21 +10,35 @@
   inset: 0;
 }
 
+.contact-section-title {
+  font-size: 3.5rem;
+  font-weight: 700;
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
 .contact-content {
   position: relative;
   z-index: 10;
-  max-width: 1000px;
+  max-width: 1200px; /* was 1000px */
   margin: 0 auto;
+  display: flex;
+  flex-direction: row-reverse;
+  gap: 3rem; /* was 2rem — increases spacing */
+  flex-wrap: wrap;
+  padding: 0 1rem; /* ensures spacing on small screens */
+
 }
 
-.contact-form-wrapper {
+ .contact-form-wrapper {
+  flex: 1;
+  min-width: 0; /* prevent weird overflow */
   background: rgba(255, 255, 255, 0.95);
   backdrop-filter: blur(10px);
   padding: 3rem;
   border-radius: 1rem;
   box-shadow: 0 20px 40px rgba(0, 0, 0, 0.2);
 }
-
 .contact-form {
   display: flex;
   flex-direction: column;
@@ -33,15 +47,17 @@
 
 .form-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  grid-template-columns: 1fr 1fr;
   gap: 1.5rem;
 }
 
 .input-wrapper label {
+  font-size: 1.3rem;
   font-weight: 600;
   color: #1e293b;
   margin-bottom: 0.5rem;
   display: block;
+  direction: rtl;
 }
 
 .input-wrapper input,
@@ -53,6 +69,8 @@
   font-size: 1rem;
   color: #1e293b;
   outline: none;
+  direction: rtl;
+  transition: border-color 0.2s ease, box-shadow 0.2s ease;
 }
 
 .input-wrapper input:focus,
@@ -60,6 +78,36 @@
   border-color: #3b82f6;
   box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.2);
 }
+
+.business-info {
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+  direction:rtl;
+  padding: 3rem 0
+}
+
+.info-row {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+}
+
+.info-icon {
+  background: #e0f2fe;
+  padding: 0.75rem;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.label {
+  font-weight: 600;
+  font-size: 1rem;
+  color: #1e293b;
+}
+
 
 .submit-btn {
   background: linear-gradient(to right, #3b82f6, #9333ea);
@@ -80,5 +128,27 @@
 .thank-you {
   text-align: center;
   padding: 3rem;
+}
+
+@media (min-width: 1400px) {
+  .contact-content {
+    max-width: 1400px;
+  }
+}
+
+@media (max-width: 1000px) {
+  .form-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 900px) {
+  .contact-content {
+    flex-direction: column;
+  }
+
+  .contact-form-wrapper {
+    width: 100%;
+  }
 }
 
