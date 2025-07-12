@@ -84,7 +84,7 @@
   flex-direction: column;
   gap: 3rem;
   direction:rtl;
-  padding: 3rem 0
+  padding-top: 3rem;
 }
 
 .info-row {
@@ -104,25 +104,85 @@
 
 .label {
   font-weight: 600;
-  font-size: 1rem;
+  font-size: 1.5rem;
   color: #1e293b;
 }
+
+.label-content {
+  font-size: 1.3rem;
+  color: #475569;
+  margin-top: 0.25rem;
+}
+
+.info-row-social-media {
+  margin-top: 3vw;
+  display: flex;
+  gap: 5vw;
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.info-icon-social-media {
+  padding: 0.75rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 4rem; /* fixed size for consistency */
+  height: 4rem; /* fixed size for consistency */
+  transition: transform 0.3s ease;
+}
+.info-icon-social-media:hover {
+  transform: scale(1.2);
+}
+
+.info-icon-social-media:active{
+  transform: scale(0.9);
+}
+
+
 
 
 .submit-btn {
   background: linear-gradient(to right, #3b82f6, #9333ea);
-  color: white;
-  padding: 1rem 2rem;
-  font-size: 2rem;
-  font-weight: 600;
+  padding: 1vw 2vw;
   border-radius: 0.75rem;
   cursor: pointer;
   transition: transform 0.3s ease;
   border: none;
+  width: 20vw;
+  margin: 0 auto;
+  min-width: 10rem;
+  min-height: 3rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
+
+.submit-btn-text {
+  display: flex;
+  align-items: center;
+  gap: 0.9rem; /* space between text and icon */
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: white;
+  direction: rtl;
+}
+
+.send-icon {
+  width: 1.1em;
+  height: 1.1em;
+  flex-shrink: 0;
+  stroke-width: 2;
+}
+
 
 .submit-btn:hover {
   transform: scale(1.05);
+}
+
+.submit-btn:active {
+  transform: scale(0.97); /* shrink slightly on click */
 }
 
 .thank-you {

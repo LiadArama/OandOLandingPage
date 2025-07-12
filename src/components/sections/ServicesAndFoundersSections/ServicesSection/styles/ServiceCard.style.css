@@ -1,5 +1,5 @@
 .service-card {
-  /* position: relative; */
+  position: relative;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -9,10 +9,6 @@
   border-radius: 2rem;
   box-shadow: 0 10px 25px rgba(0, 0, 0, 0.158);
   transition: all 0.3s ease;                     
-  /* max-width: 25rem;
-  min-width: 25rem;
-  min-height: 22rem;
-  max-height: 22rem; */
   overflow: hidden;
   margin-right:0;
 }

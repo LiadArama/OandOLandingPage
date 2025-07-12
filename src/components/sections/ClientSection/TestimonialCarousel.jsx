@@ -6,7 +6,9 @@ const rawTestimonials = [
   { title: "לקוח ב'", text: "ממליץ בחום! מקצועיות שאין שני לה." },
   { title: "לקוח ג'", text: "הצוות היה קשוב, יצירתי ונתן מעל ומעבר." },
   { title: "לקוח ד'", text: "תהליך עבודה נעים עם תוצאה יוצאת דופן!" },
-  { title: "לקוח ה'", text: "עיצוב שמדבר בעד עצמו. תודה רבה!" },
+  { title: "אסנת אולצוור - חברת טאו ", text: `
+עומרי ועומר מ‑O&O Digital Future עזרו לנו לתרגם את הסיפור והעשייה שלנו לשפה מדויקת ואיכותית ברשתות. בזכותם אנחנו מתמקדים בעבודה שלנו בראש שקט, בידיעה שהשיווק בידיים מקצועיות ויצירתיות. ממליצה עליהם בחום. שותפים אמיתיים לדרך.
+` },
 ];
 
 
@@ -113,8 +115,9 @@ const handleTransitionEnd = () => {
             key={i}
             style={{ width: `${cardWidth}px` }}
           >
-            <h4 className="testimonial-title">{item.title}</h4>
             <p className="testimonial-text">{item.text}</p>
+            <h4 className="testimonial-title">{item.title}</h4>
+            
           </div>
         ))}
       </div>
