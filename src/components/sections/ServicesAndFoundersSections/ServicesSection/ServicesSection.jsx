@@ -19,28 +19,28 @@ export default function ServicesSection({ isVisible }) {
     {
       icon: Palette,
       title: "Creative & Copywriting",
-      description: "קריאייטיב ותוכן שמעוררים השראה ומניעים לפעולה",
+      description: "בין אם זו מודעה, דף נחיתה או סרטון. הקריאייטיב שלנו לא רק יפה, הוא ממוקד תוצאה. אנחנו יודעים איך לגרום לקהל שלך לעצור, להתעניין ולפעול",
       iconBg: "bg-pink-100",
       iconColor: "text-pink-600",
     },
     {
       icon: MousePointer,
       title: "PPC Campaigns",
-      description: "קמפיינים ממומנים חכמים עם ROI מקסימלי",
+      description: "ניהול קמפיינים בפייסבוק, אינסטגרם, גוגל, טיקטוק ועוד עם דגש על יצירת לידים איכותיים. לא נסתפק רק בקליקים, אנחנו שואפים להחזר השקעה גבוה וניצול מקסימלי של התקציב.",
       iconBg: "bg-blue-100",
       iconColor: "text-blue-600",
     },
     {
       icon: Users,
       title: "Social Media Management",
-      description: "ניהול רשתות חברתיות שבונה קהילה ומחזק מותג",
+      description: "ניהול עמודים, יצירת תוכן שוטף, עיצוב גרפי ואינטראקציה עם הקהל. הכול נעשה תוך התאמה אישית לקול ולשפה של העסק שלך, כדי להפוך עוקבים למעורבים ומעורבים ללקוחות.",
       iconBg: "bg-purple-100",
       iconColor: "text-purple-600",
     },
     {
       icon: BarChart3,
       title: "Strategy & Consulting",
-      description: "ייעוץ אסטרטגי מקצועי לצמיחה בת קיימא",
+      description: "אסטרטגיה טובה היא הבסיס לכל מהלך שיווקי מצליח. אנחנו בונים יחד איתך תוכנית פעולה שמבוססת על הבנת קהל היעד, הגדרת מטרות ברורה, וניתוח עומק של הסביבה העסקית והמתחרים.",
       iconBg: "bg-green-100",
       iconColor: "text-green-600",
     },
@@ -55,12 +55,11 @@ export default function ServicesSection({ isVisible }) {
           transition={{ duration: 0.8 }}
           className="services-header"
         >
-          <h2 className="section-title">
-            How We <span className="title-gradient">Build The Future</span>
+          <h2 className="section-title services-section-title" style={{   fontSize: 'clamp(2.25rem, 7vw, 7rem)'}}>
+            How We <br></br>
+            <span className="title-gradient">Build The Future</span>
           </h2>
-          <p className="services-subtitle hebrew-text">
-            המטרה: לא סתם לפרסם, אלא לפעול חכם – עם כיוון ברור מסר חד ותכנון שמייצר תוצאות אמיתיות
-          </p>
+
           <br />
           <br />
         </motion.div>

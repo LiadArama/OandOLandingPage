@@ -1,8 +1,5 @@
-import React from "react";
 import { motion } from "framer-motion";
 import logo from '../../../assets/OObluebackground.png'
-// import { Button } from "@/components/ui/button";
-import { ArrowLeft, Sparkles } from "lucide-react"; // Sparkles might not be needed if replaced, but keeping it as it's not explicitly removed from imports
 import "./HeroSection.style.css";
 import '../../../styles/Global.style.css';
 
@@ -47,30 +44,7 @@ export default function HeroSection({isVisible}) {
           <span className="hero-gradient-text">Digital Future</span>
 
         </motion.h1>
-
-        <motion.p
-          initial={{ opacity: 0, y: 30 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.8, delay: 1.8 }}
-          className="hero-subtitle hebrew-text"
-        >
-      אסטרטגיה. קריאייטיב. ביצועים. הכול במקום אחד.
-
-
-
-
-
-        </motion.p>
       </div>
-{/*
-          <Button 
-            onClick={scrollToContact}
-            className="btn-primary text-white px-12 py-6 text-lg font-semibold rounded-full hover:scale-105 transition-all duration-300 shadow-premium"
-          >
-            בואו נדבר
-            <ArrowLeft className="mr-3 w-5 h-5" />
-          </Button>
-*/}
     </section>
   );
 }

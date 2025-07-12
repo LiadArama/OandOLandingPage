@@ -21,7 +21,7 @@ export default function ServicesAndFoundersSection() {
           initial={{ opacity: 0, y: 30 }}
             animate={servicesInView || foundersInView ? { opacity: 1, y: 0 } : {}}
             transition={{ duration: 0.8 }}
-            className="services-founders-circle-top"
+            // className="services-founders-circle-top"
         ></div>
         {/* <div className="services-founders-circle-top" /> */}
                 {/* <div

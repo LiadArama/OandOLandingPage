@@ -24,18 +24,8 @@ export default function TestimonialCarousel() {
   const [visibleCount, setVisibleCount] = useState(3);
   const [index, setIndex] = useState(rawTestimonials.length - 1);
   const [isTransitioning, setIsTransitioning] = useState(false);
-
-//   const getActiveDotIndex = () => {
-//   let rawIndex = index % rawTestimonials.length;
-
-//   // Clamp to valid dot range
-//   if (rawIndex < 0) rawIndex += rawTestimonials.length;
-
-//   const maxDotIndex = rawTestimonials.length;
-//   return Math.min(rawIndex, maxDotIndex - 1);
-// };
+  
 const getActiveDotIndex = () => {
-  if(index === 4) debugger;
   let rawIndex = index % rawTestimonials.length;
   if (rawIndex < 0) rawIndex += rawTestimonials.length;
 

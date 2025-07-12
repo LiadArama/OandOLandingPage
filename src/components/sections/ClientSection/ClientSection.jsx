@@ -17,17 +17,11 @@ export default function ClientSection({ isVisible }) {
           className="clients-header"
         >
           <LogoCarousel isVisible={true} backgroundColor="transparent" isClientLogos={true} />
-          <h2 className="section-title blue-background-text">
+          <h2 className="section-title blue-background-text clients-section-title">
             What{" "}
             <span className="title-gradient"> Our Clients</span>
             {" "}Say
           </h2>
-
-        
-
-
-          
-
         </motion.div>
       </div>
       <motion.div

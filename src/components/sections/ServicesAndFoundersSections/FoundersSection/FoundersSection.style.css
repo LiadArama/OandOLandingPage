@@ -10,7 +10,7 @@
 }
 
 .founders-title {
-  font-size: 3.5rem;
+  font-size: 4rem;
   font-weight: 700;
   margin-bottom: 1rem;
 }
@@ -107,9 +107,10 @@
     gap: 0.5rem;
     color: #334155;
     font-weight: 500;
-    margin-top: 3rem;
+    margin-top: 6rem;
     display: inline-flex;
     flex-direction: column;
+    font-size: clamp(1.25rem, 3vw, 1.5rem);
 }
 
 .founder-highlight span:not(.icon) {
@@ -120,9 +121,10 @@
 }
 
 .founder-desc {
-  margin-top: 4rem;
+  margin-top: 6rem;
   color: #d8dee7;
   line-height: 1.6;
+  font-size: clamp(1.25rem, 3vw, 1.5rem);
 }
 
 .founder-img{

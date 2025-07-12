@@ -11,6 +11,10 @@
   inset: 0;
 }
 
+.service-section-title{
+  font-size: 7rem;
+}
+
 .services-founders-circle-top {
   position: absolute;
   top: -10rem;

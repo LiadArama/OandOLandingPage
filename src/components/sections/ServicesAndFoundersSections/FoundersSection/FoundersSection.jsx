@@ -13,8 +13,7 @@ export default function FoundersSection({ isVisible }) {
             animate={isVisible ? { opacity: 1, y: 0 } : {}}
             transition={{ duration: 0.8 }}
           >
-            <h2 className="founders-title hebrew-section-title">המייסדים</h2>
-            <p className="founders-subtitle">מאחורי הסוכנות – שני שותפים עם חזון אחד: לעבוד עם לקוחות, לא עבורם.</p>
+            <h2 className="founders-title hebrew-section-title">About Us</h2>
           </motion.div>
         </div>
 
@@ -40,11 +39,10 @@ export default function FoundersSection({ isVisible }) {
               </div>
               <div className="founder-info">
                 <h3 className="founder-name">עומר</h3>
-                <p className="founder-role pink">קריאייטיב וקמפיינים</p>
                 <div className="founder-highlight">
-                  <span>מוביל את תחום היצירתיות והחדשנות</span>
+                  <span>מומחה לקמפיינים דיגיטליים עם ניסיון בניהול תקציבים גבוהים בכלל הפלטפורמות המובילות</span>
                 </div>
-                <p className="founder-desc">מתמחה ביצירת קונספטים וקמפיינים שמניעים לפעולה ומייצרים באזז.</p>
+                <p className="founder-desc">מתמחה בקריאייטיב בועט, קופירייטינג מדויק וניתוח מתקדם של נתונים עם מטרה אחת ברורה: לייצר ביצועים שמשפיעים על העסק</p>
               </div>
             </div>
           </motion.div>
@@ -69,11 +67,10 @@ export default function FoundersSection({ isVisible }) {
               </div>
               <div className="founder-info">
                 <h3 className="founder-name">עומרי</h3>
-                <p className="founder-role purple">אסטרטגיה וצמיחה</p>
                 <div className="founder-highlight">
-                  <span>מוביל את תחום האסטרטגיה והצמיחה העסקית</span>
+                  <span>עשר שנות ניסיון בפיתוח עסקי ומכירות  בעל ידע רחב בשיווק ואסטרטגיה דיגיטלית, תואר שני במנהל עסקים (MBA) </span>
                 </div>
-                <p className="founder-desc">מוביל את התכנון האסטרטגי, ניתוח נתונים, ואופטימיזציה לצמיחה ארוכת טווח.</p>
+                <p className="founder-desc">מתמחה בבניית אסטרטגיות צמיחה מעשיות ומדידות, המותאמות ליעדים העסקיים של הלקוחות</p>
               </div>
             </div>
           </motion.div>
