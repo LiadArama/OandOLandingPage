@@ -9,7 +9,6 @@ import ClientSection from "./components/sections/ClientSection/ClientSection";
 import ContactSection from "./components/sections/ContactSection/ContactSection";
 import FooterSection from "./components/sections/FooterSection/FooterSection";
 import ServicesAndFoundersSection from "./components/sections/ServicesAndFoundersSections/ServicesAndFoundersSection";
-import LogoCarousel from "./components/util-components/LogoCarousel/LogoCarousel";
 
 export default function App() {
   const [isVisible, setIsVisible] = useState({});
@@ -39,7 +38,6 @@ export default function App() {
       <HeroSection />
       <AboutSection isVisible={isVisible} />
       <ServicesAndFoundersSection isVisible={isVisible} />
-      {/* <LogoCarousel isVisible={isVisible} /> */}
       <ClientSection isVisible={isVisible} />
       <ContactSection isVisible={isVisible} />
       <FooterSection />
