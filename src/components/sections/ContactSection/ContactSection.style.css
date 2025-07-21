@@ -38,6 +38,7 @@
   padding: 3rem;
   border-radius: 1rem;
   box-shadow: 0 20px 40px rgba(0, 0, 0, 0.2);
+  overflow: hidden;
 }
 .contact-form {
   display: flex;
@@ -104,12 +105,12 @@
 
 .label {
   font-weight: 600;
-  font-size: 1.5rem;
+  font-size: clamp(1.5rem, 2vw, 2rem);
   color: #1e293b;
 }
 
 .label-content {
-  font-size: 1.3rem;
+  font-size: clamp(1rem, 1.5vw, 1.8rem);
   color: #475569;
   margin-top: 0.25rem;
 }
