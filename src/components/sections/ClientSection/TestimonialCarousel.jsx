@@ -2,11 +2,11 @@ import { useEffect, useRef, useState } from "react";
 import "./TestimonialCarousel.style.css";
 
 const rawTestimonials = [
-  { title: "לקוח א'", text: "שירות מדהים, תוצאות בזמן קצר ויחס אישי!" },
-  { title: "לקוח ב'", text: "ממליץ בחום! מקצועיות שאין שני לה." },
-  { title: "לקוח ג'", text: "הצוות היה קשוב, יצירתי ונתן מעל ומעבר." },
-  { title: "לקוח ד'", text: "תהליך עבודה נעים עם תוצאה יוצאת דופן!" },
-  { title: "אסנת אולצוור - חברת טאו ", text: `
+  { text: "שירות מדהים, תוצאות בזמן קצר ויחס אישי!" },
+  { text: "ממליץ בחום! מקצועיות שאין שני לה." },
+  { text: "הצוות היה קשוב, יצירתי ונתן מעל ומעבר." },
+  { text: "תהליך עבודה נעים עם תוצאה יוצאת דופן!" },
+  {text: `
 עומרי ועומר מ‑O&O Digital Future עזרו לנו לתרגם את הסיפור והעשייה שלנו לשפה מדויקת ואיכותית ברשתות. בזכותם אנחנו מתמקדים בעבודה שלנו בראש שקט, בידיעה שהשיווק בידיים מקצועיות ויצירתיות. ממליצה עליהם בחום. שותפים אמיתיים לדרך.
 ` },
 ];
@@ -115,7 +115,7 @@ const handleTransitionEnd = () => {
             key={i}
             style={{ width: `${cardWidth}px` }}
           >
-            <p className="testimonial-text">{item.text}</p>
+            <p className="testimonial-text">{item.text}</p> {/**Fix the font size to be bigger */}
             <h4 className="testimonial-title">{item.title}</h4>
             
           </div>

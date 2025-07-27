@@ -87,9 +87,10 @@ export default function ContactSection({ isVisible }) {
               <div className="form-grid">
                 <Input
                   label="שם החברה "
-                  placeholder="שם החברה (אופציונלי)"
+                  placeholder="שם החברה"
                   value={formData.company}
                   onChange={val => handleChange("company", val)}
+                  required
                 />
                 <Input
                   label="טלפון"

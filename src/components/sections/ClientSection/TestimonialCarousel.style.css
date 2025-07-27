@@ -31,7 +31,7 @@
 }
 
 .testimonial-card p {
-  font-size: 0.95rem;
+  font-size: clamp(1.3rem, 2.3vw, 1.55rem);
   line-height: 1.5;
 }
 
@@ -68,4 +68,8 @@
 
 .testimonial-dots .dot.active {
   background-color: white;
+}
+
+.testimonial-text {
+  font-size: 2rem
 }

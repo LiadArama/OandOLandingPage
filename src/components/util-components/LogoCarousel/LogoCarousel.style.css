@@ -23,8 +23,8 @@
 }
 
 .carousel-item {
-  height: 250px;
-  width: 250px; /* Adjust width as needed */
+  height: 200px;
+  width: 200px; /* Adjust width as needed */
   margin: 0 5rem;
   display: flex;
   justify-content: center;

@@ -10,11 +10,6 @@ export default function FooterSection() {
           {/* Column 3: Branding + Social */}
           <div className="footer-column footer-branding">
             <img src={whiteLogo} alt="O&O Logo" className="footer-logo" />
-            <p className="footer-description">
-              סוכנות בוטיק לשיווק דיגיטלי שמלווה עסקים בדרך לצמיחה.
-              <br />
-              אנחנו מאמינים בשיווק אמיתי שמתחבר לקהל ומביא תוצאות.
-            </p>
             <div className="footer-socials">
               <a href="https://www.facebook.com/profile.php?id=61574833281398" className="social-icon bg-facebook">
                 <Facebook />
