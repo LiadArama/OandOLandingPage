@@ -7,7 +7,6 @@ export default function FooterSection() {
     <footer className="footer-section">
       <div className="footer-container">
         <div className="footer-grid">
-          {/* Column 3: Branding + Social */}
           <div className="footer-column footer-branding">
             <img src={whiteLogo} alt="O&O Logo" className="footer-logo" />
             <div className="footer-socials">
@@ -39,22 +38,22 @@ export default function FooterSection() {
               </a>
             </div>
           </div>
-          {/* Column 1: Contact Info */}
-          <div className="footer-column">
-            <h4 className="footer-heading">יצירת קשר</h4>
-            <div className="contact-item">
-              <Phone className="icon" />
-              <span>052-8743761</span>
-            </div>
-            <div className="contact-item">
-              <Mail className="icon" />
-              <span>contact@treistar.com</span>
-            </div>
-            <div className="contact-item">
-              <MapPin className="icon" />
-              <span>קרליבך 11 תל אביב</span>
-            </div>
-          </div>
+<div className="footer-column">
+  <h4 className="footer-heading">יצירת קשר</h4>
+  <a href="tel:0528743761" className="contact-item link-item" aria-label="Call us">
+    <Phone className="icon" />
+    <span>052-8743761</span>
+  </a>
+  <a href="mailto:contact@treistar.com" className="contact-item link-item" aria-label="Send email">
+    <Mail className="icon" />
+    <span>contact@treistar.com</span>
+  </a>
+  <a href="https://maps.google.com/?q=קרליבך 11 תל אביב" target="_blank" rel="noopener noreferrer" className="contact-item link-item" aria-label="Find us on map">
+    <MapPin className="icon" />
+    <span>קרליבך 11 תל אביב</span>
+  </a>
+</div>
+
         </div>
 
         <div className="footer-bottom">

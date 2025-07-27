@@ -154,3 +154,21 @@
   color: #9ca3af;
   font-size: 0.875rem;
 }
+
+.contact-item .icon {
+  color: #f1f5f9;
+}
+
+.link-item {
+  text-decoration: none;
+  transition: transform 0.2s ease;
+}
+
+.link-item:hover {
+  transform: scale(1.05);
+}
+
+.link-item:active {
+  transform: scale(0.95);
+}
+
