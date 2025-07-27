@@ -130,35 +130,44 @@ export default function ContactSection({ isVisible }) {
           className="contact-form-wrapper"
         >
           <div className="business-info">
-            <div className="info-row">
-              <div className="info-icon" style={{ backgroundColor: "rgb(219 234 254)" }}>
-                <Phone color="rgb(37, 99, 235)" />
-              </div>
-              <div>
-                <p className="label">טלפון</p>
-                <p className="label-content">052-8743761</p>
-              </div>
-            </div>
+           <div className="info-row">
+  <div className="info-icon" style={{ backgroundColor: "rgb(219 234 254)" }}>
+    <Phone color="rgb(37, 99, 235)" />
+  </div>
+  <div>
+    <p className="label">טלפון</p>
+    <p className="label-content">
+      <a href="tel:0528743761" className="info-link">052-8743761</a>
+    </p>
+  </div>
+</div>
 
-            <div className="info-row">
-              <div className="info-icon" style={{ backgroundColor: "rgb(243 232 255)" }}>
-                <Mail color="rgb(147 51 234)" />
-              </div>
-              <div>
-                <p className="label">אימייל</p>
-                <p className="label-content">contact@treistar.com</p>
-              </div>
-            </div>
+<div className="info-row">
+  <div className="info-icon" style={{ backgroundColor: "rgb(243 232 255)" }}>
+    <Mail color="rgb(147 51 234)" />
+  </div>
+  <div>
+    <p className="label">אימייל</p>
+    <p className="label-content">
+      <a href="mailto:contact@treistar.com" className="info-link">contact@treistar.com</a>
+    </p>
+  </div>
+</div>
 
-            <div className="info-row">
-              <div className="info-icon" style={{ backgroundColor: "rgb(220 252 231)" }}>
-                <MapPin color="rgb(22 163 74)" />
-              </div>
-              <div>
-                <p className="label">מיקום</p>
-                <p className="label-content"> קרליבך 11 תל אביב</p>
-              </div>
-            </div>
+<div className="info-row">
+  <div className="info-icon" style={{ backgroundColor: "rgb(220 252 231)" }}>
+    <MapPin color="rgb(22 163 74)" />
+  </div>
+  <div>
+    <p className="label">מיקום</p>
+    <p className="label-content">
+      <a href="https://www.waze.com/he/live-map/directions/%D7%AA%D7%9C-%D7%90%D7%91%D7%99%D7%91-%D7%99%D7%A4%D7%95?to=place.ws.il.1380.11" target="_blank" rel="noopener noreferrer" className="info-link">
+        קרליבך 11 תל אביב
+      </a>
+    </p>
+  </div>
+</div>
+
 
 <div className="info-row-social-media">
   <div className="info-icon-social-media-container" >
