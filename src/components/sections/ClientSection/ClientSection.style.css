@@ -1,19 +1,17 @@
 .clients-section {
   padding: 6rem 1rem;
   margin-top: 2rem;
-  padding-top: 0; /* Adjust padding to fit the design - remove for extra space*/
   background: #0D0D45;
   background-color: #0D0D45;
-    /* background: #f5f5dc;
-  background-color: #f5f5dc; */
-
 }
 
 .clients-content {
+
   max-width: 1200px;
   margin: 0 auto;
 }
 
 .clients-section-title {
+    font-size: clamp(3rem, 5vw, 6rem);
   margin-top: 5rem;
 }
