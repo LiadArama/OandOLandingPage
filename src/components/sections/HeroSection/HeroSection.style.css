@@ -37,7 +37,6 @@
 
 .hero-logo-img {
   height: 20rem;
-  filter: brightness(0) invert(1);
 }
 .hero-title {
   font-family: 'Poppins', sans-serif;
@@ -62,4 +61,10 @@
   max-width: 100rem;
   line-height: 2;
   padding-left: 2rem;
+}
+
+@media (max-width: 768px) {
+ .hero-logo-img{
+   height: 15rem;
+ }
 }

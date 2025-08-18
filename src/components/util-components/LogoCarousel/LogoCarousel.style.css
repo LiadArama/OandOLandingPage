@@ -1,5 +1,4 @@
 .carousel-wrapper {
-  /* padding-top:4rem; */
   position: relative;
   width: 100vw;
   left: 50%;
@@ -20,10 +19,11 @@
 .carousel-track:hover {
   filter: grayscale(0%);
   opacity: 1;
+
 }
 
 .carousel-item {
-  height: 200px;
+  height: 220px;
   width: 200px; /* Adjust width as needed */
   margin: 0 5rem;
   display: flex;
@@ -44,5 +44,14 @@
   }
   100% {
     transform: translateX(-50%);
+  }
+}
+
+
+@media (max-width: 768px) {
+  .carousel-item {
+    width: 120px; /* Adjust width for smaller screens */
+    height: 120px;
+    margin: 0 1rem;
   }
 }

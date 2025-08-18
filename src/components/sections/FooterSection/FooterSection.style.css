@@ -11,17 +11,18 @@
 
 .footer-grid {
   display: flex;
-  flex-direction: column;
-  gap: 3.5vw;
-  margin-bottom: 3rem;
+  flex-direction: column; /* stack items vertically */
+  align-items: center;    /* horizontal center */
+  justify-content: center; /* vertical center if height is set */
+  gap: 1.5rem; /* optional spacing between elements */
+  text-align: center; /* center text inside elements */
+  margin-bottom: 1.5rem;
 }
 
 @media (min-width: 768px) {
   .footer-grid {
-    flex-direction: row-reverse;
-    justify-content: space-between;
-    align-items: flex-start;
-    gap: 30vw
+    justify-content: center; /* center them as a group */
+    align-items: center;
   }
 }
 
@@ -32,7 +33,7 @@
 
 
   .footer-heading {
-    text-align: right;
+    text-align: center;
     margin-bottom: 1rem;
   }
 
@@ -94,9 +95,7 @@
   height: auto;
   margin-bottom: 1rem;
   display: block;
-  filter: brightness(0) invert(1);
-  margin-left: auto; /* ✅ pushes it to the right */
-  margin-right: 0;
+  margin:auto;
   text-align: right;
 }
 
@@ -108,7 +107,7 @@
 /* Social Icons */
 .footer-socials {
   display: flex;
-  justify-content: right;
+  justify-content: center;
   gap: 1rem;
   margin-top: 5vw;
 }

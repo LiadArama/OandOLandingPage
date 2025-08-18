@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import logo from '../../../assets/OObluebackground.png'
+import logo from '../../../assets/new-bis-logo.png'
 import "./HeroSection.style.css";
 import '../../../styles/Global.style.css';
 

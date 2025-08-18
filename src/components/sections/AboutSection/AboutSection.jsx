@@ -16,8 +16,8 @@ export default function AboutSection({ isVisible }) {
           <b className="about-welcome"> היי, כיף שהגעתם!</b>
           <b>
             <p className="about-description">
-              אנחנו O&O, סוכנות דיגיטל שחושבת רחב ופועלת מדויק. <br />
-              המומחיות שלנו היא לבנות עבור כל לקוח מעטפת 360 שמכסה את כל הצרכים השיווקיים של העסק – מאסטרטגיה חכמה, דרך
+              אנחנו HAKER X DIGITAL, סוכנות דיגיטל שחושבת רחב ופועלת מדויק. <br />
+              המומחיות שלנו היא לבנות עבור כל לקוח מעטפת 360 שמכסה את כל הצרכים השיווקיים של העסק, מאסטרטגיה חכמה, דרך
               קריאייטיב שמתחבר לקהל, ועד ביצוע ממוקד שמביא תוצאות בשטח. <br />
             </p>
             <p className="about-description">
@@ -31,7 +31,7 @@ export default function AboutSection({ isVisible }) {
               הנכון עם מיקוד אחד ברור – תוצאות.
             </p>
             <p className="about-description" style={{ marginTop: "1.3rem", marginBottom: "0.2rem" }}>
-              מהר מאוד תבינו , O&O זה לא רק דיגיטל. <br />
+              מהר מאוד תבינו, HAKER X DIGITAL זה לא רק דיגיטל. <br />
               זה מערכת יחסים. מוכנים להתאהב?
             </p>
           </b>

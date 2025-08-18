@@ -1,6 +1,7 @@
 .founders-section {
   margin-top: 1rem;
   padding: 0 2rem;
+  /* margin: auto; */
   padding-bottom: 3rem;
 }
 
@@ -10,7 +11,7 @@
 }
 
 .founders-title {
-  font-size: 4rem;
+  font-size: clamp(2.5rem, 7vw, 5rem);
   font-weight: 700;
   margin-bottom: 1rem;
 }
@@ -24,7 +25,11 @@
 .founders-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-  gap: 6rem;
+  /* gap: 6rem; */
+  margin: auto;
+  justify-content: center;
+  align-items: center;
+  justify-items: center;
 }
 
 .founder-card {
@@ -37,6 +42,7 @@
   position: relative;
   overflow: hidden;
   cursor: pointer;
+  max-width: 400px;
 }
 
 .founder-card-inner {
@@ -107,10 +113,10 @@
     gap: 0.5rem;
     color: #334155;
     font-weight: 500;
-    margin-top: 6rem;
+    margin-top: 6vw;
     display: inline-flex;
     flex-direction: column;
-    font-size: clamp(1.25rem, 3vw, 1.5rem);
+    font-size: clamp(1.15rem, 3vw, 1.5rem);
 }
 
 .founder-highlight span:not(.icon) {
@@ -121,10 +127,10 @@
 }
 
 .founder-desc {
-  margin-top: 6rem;
+  margin-top: 6vw;
   color: #d8dee7;
   line-height: 1.6;
-  font-size: clamp(1.25rem, 3vw, 1.5rem);
+  font-size: clamp(1rem, 2.75vw, 1.25rem);
 }
 
 .founder-img{

@@ -1,6 +1,6 @@
 import "./FooterSection.style.css";
 import { Facebook, Instagram, Linkedin, Mail, Phone, MapPin } from "lucide-react";
-import whiteLogo from "../../../assets/OObluebackground.png";
+import whiteLogo from "../../../assets/new-bis-logo.png";
 
 export default function FooterSection() {
   return (
@@ -10,17 +10,17 @@ export default function FooterSection() {
           <div className="footer-column footer-branding">
             <img src={whiteLogo} alt="O&O Logo" className="footer-logo" />
             <div className="footer-socials">
-              <a href="https://www.facebook.com/profile.php?id=61574833281398" className="social-icon bg-facebook">
+              <a href="https://www.facebook.com/profile.php?id=61579049410917" className="social-icon bg-facebook">
                 <Facebook />
               </a>
-              <a href="https://www.instagram.com/oandodigital" className="social-icon bg-instagram">
+              <a href="https://www.instagram.com/hakerxdigital" className="social-icon bg-instagram">
                 <Instagram />
               </a>
-              <a href="https://www.linkedin.com/company/o-o-digital-future/about/" className="social-icon bg-linkedin">
+              <a href="https://www.linkedin.com/company/hakerxdigital/about/" className="social-icon bg-linkedin">
                 <Linkedin />
               </a>
               <a
-                href="https://api.whatsapp.com/send?phone=972528743761"
+                href="https://api.whatsapp.com/send?phone=972527928282"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="social-icon bg-whatsapp"
@@ -38,7 +38,7 @@ export default function FooterSection() {
               </a>
             </div>
           </div>
-<div className="footer-column">
+{/* <div className="footer-column">
   <h4 className="footer-heading">יצירת קשר</h4>
   <a href="tel:0528743761" className="contact-item link-item" aria-label="Call us">
     <Phone className="icon" />
@@ -52,12 +52,12 @@ export default function FooterSection() {
     <MapPin className="icon" />
     <span>קרליבך 11 תל אביב</span>
   </a>
-</div>
+</div> */}
 
         </div>
 
         <div className="footer-bottom">
-          <p>&copy; 2024 O&O Digital Future. כל הזכויות שמורות.</p>
+          <p>&copy; 2024 HAKER X DIGITAL Digital Future. כל הזכויות שמורות.</p>
         </div>
       </div>
     </footer>
