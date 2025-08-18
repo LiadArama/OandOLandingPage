@@ -25,11 +25,11 @@ export default function ContactSection({ isVisible }) {
     console.log("Form submitted:", formData);
     setIsSubmitted(true);
     emailjs.send(
-    'service_2l89kto',
-    'template_ea0h815',
-    formData,  // This will map to template variables
-    '-BHhKbYby3tQvpLc0'
-  ).then(setTimeout(() => {
+      process.env.REACT_APP_EMAILJS_SERVICE_ID,
+      process.env.REACT_APP_EMAILJS_TEMPLATE_ID,
+      formData,  // This will map to template variables
+      process.env.REACT_APP_EMAILJS_PUBLIC_KEY
+    ).then(setTimeout(() => {
       setIsSubmitted(false);
       setFormData({
         fullName: "",
@@ -149,7 +149,7 @@ export default function ContactSection({ isVisible }) {
   <div>
     <p className="label">אימייל</p>
     <p className="label-content">
-      <a href="mailto:contact@treistar.com" className="info-link">hakerxdigital@gmail.com</a>
+      <a href="mailto:hakerxdigital@gmail.com" className="info-link">hakerxdigital@gmail.com</a>
     </p>
   </div>
 </div>
