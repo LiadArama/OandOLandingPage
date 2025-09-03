@@ -24,6 +24,9 @@ export default function ContactSection({ isVisible }) {
     e.preventDefault();
     console.log("Form submitted:", formData);
     setIsSubmitted(true);
+    console.log("Service:", process.env.REACT_APP_EMAILJS_SERVICE_ID);
+console.log("Template:", process.env.REACT_APP_EMAILJS_TEMPLATE_ID);
+console.log("Public Key:", process.env.REACT_APP_EMAILJS_PUBLIC_KEY);
     emailjs.send(
       process.env.REACT_APP_EMAILJS_SERVICE_ID,
       process.env.REACT_APP_EMAILJS_TEMPLATE_ID,

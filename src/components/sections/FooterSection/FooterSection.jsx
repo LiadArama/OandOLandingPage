@@ -57,7 +57,7 @@ export default function FooterSection() {
         </div>
 
         <div className="footer-bottom">
-          <p>&copy; 2024 HAKER X DIGITAL Digital Future. כל הזכויות שמורות.</p>
+          <p>&copy; 2024 HAKER X DIGITAL. כל הזכויות שמורות.</p>
         </div>
       </div>
     </footer>
