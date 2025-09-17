@@ -4,15 +4,15 @@
   /* align-items: center; */
   max-width: 50rem;
   word-wrap: break-word;
-  margin: 0 auto;
   padding: 0 1rem;
+  margin: 0 auto;
   font-size: clamp(1.25rem, 5vw, 2rem);
 }
 
 
  .services-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
   gap: 9vw;
   overflow: visible;
   position: relative;
