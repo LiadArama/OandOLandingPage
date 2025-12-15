@@ -12,11 +12,99 @@
 
  .services-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
   gap: 9vw;
   overflow: visible;
   position: relative;
   z-index: 0;
+}
+
+@media (min-width: 850px){
+  .services-grid{
+      display: grid;
+      gap: 9vw;
+      overflow: visible;
+      position: relative;
+      z-index: 0;
+      grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+      justify-content: center;
+  }
+}
+
+@media (min-width: 800px){
+  .services-grid{
+      display: grid;
+      gap: 9vw;
+      overflow: visible;
+      position: relative;
+      z-index: 0;
+      grid-template-columns: repeat(auto-fit, minmax(350px, 0.3fr));
+      justify-content: center;
+  }
+}
+
+@media(max-width:799px){
+    .services-grid{
+      display: grid;
+      gap: 9vw;
+      overflow: visible;
+      position: relative;
+      z-index: 0;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      justify-content: center;
+  }
+}
+
+@media(max-width:699px){
+    .services-grid{
+      display: grid;
+      gap: 9vw;
+      overflow: visible;
+      position: relative;
+      z-index: 0;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      justify-content: center;
+  }
+}
+
+@media(max-width:599px) and (min-width:580px){
+    .services-grid{
+      display: grid;
+      gap: 9vw;
+      overflow: visible;
+      position: relative;
+      z-index: 0;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      justify-content: center;
+  }
+}
+
+@media(max-width:599px) and (min-width:520px){
+    .services-grid{
+      display: grid;
+      gap: 9vw;
+      overflow: visible;
+      position: relative;
+      z-index: 0;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      justify-content: center;
+  }
+}
+
+@media(max-width:519px){
+    .services-grid{
+      display: grid;
+      gap: 9vw;
+      overflow: visible;
+      position: relative;
+      z-index: 0;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      justify-content: center;
+      /* max-width: 80%; */
+      padding-left: 10%;
+      padding-right: 10%;
+      /* padding-bottom: 20%; */
+      /* max-height: 1rem; */
+  }
 }
 
 /* Icon color classes */

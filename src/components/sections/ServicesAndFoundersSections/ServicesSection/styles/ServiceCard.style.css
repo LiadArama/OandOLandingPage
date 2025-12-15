@@ -131,11 +131,30 @@
   height: 0.5rem;
   border-radius: 9999px;
 }
+
+@media(max-width: 426px){
+  .service-card{
+    min-height: 80vw;
+    max-height: 80vw;
+  }
+}
 /* Icon color classes */
 .text-pink-600 { color: #db2777; }
 .text-blue-600 { color: #2563eb; }
 .text-purple-600 { color: #7c3aed; }
 .text-green-600 { color: #059669; }
+
+@media(max-width:426px){
+  .text-pink-600{ max-width: 10vw;  }
+  .text-blue-600{ max-width: 10vw; }
+  .text-purple-600{ max-width: 10vw; }
+  .text-green-600{ max-width: 10vw; }
+
+  .service-card-icon {
+    width: 15vw; 
+    height: 15vw;
+  }
+}
 
 /* Icon background classes */
 .bg-pink-100 { background-color: #fce7f3; }
