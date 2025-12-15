@@ -88,7 +88,7 @@
   max-height: 0;
   overflow: hidden;
   transition: max-height 0.6s ease, opacity 0.4s ease;
-  font-size: clamp(1.3rem, 1.7vw, 2.2rem);
+  font-size: clamp(1.1rem, 3vw, 2.2rem);
   color: #0d0d45;
   margin-top: 0;
 }
@@ -101,7 +101,7 @@
 } */
  .service-card:hover .service-card-desc {
   opacity: 1;
-  max-height: 300px; /* Enough to cover your longest description */
+  max-height: 5000px; /* Enough to cover your longest description */
   margin-top: 1rem;
 }
 
@@ -134,9 +134,13 @@
 
 @media(max-width: 426px){
   .service-card{
-    min-height: 80vw;
-    max-height: 80vw;
+    min-height: 0;
   }
+   .service-card:hover .service-card-desc {
+  opacity: 1;
+  max-height: 500px; /* Enough to cover your longest description */
+  margin-top: 1rem;
+}
 }
 /* Icon color classes */
 .text-pink-600 { color: #db2777; }

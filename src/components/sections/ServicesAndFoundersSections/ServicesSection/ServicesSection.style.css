@@ -25,12 +25,12 @@
       overflow: visible;
       position: relative;
       z-index: 0;
-      grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+      grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
       justify-content: center;
   }
 }
 
-@media (min-width: 800px){
+@media (max-width: 849px){
   .services-grid{
       display: grid;
       gap: 9vw;
@@ -42,7 +42,19 @@
   }
 }
 
-@media(max-width:799px){
+@media(max-width:801px){
+    .services-grid{
+      display: grid;
+      gap: 9vw;
+      overflow: visible;
+      position: relative;
+      z-index: 0;
+      grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+      justify-content: center;
+  }
+}
+
+@media(max-width:807px){
     .services-grid{
       display: grid;
       gap: 9vw;
