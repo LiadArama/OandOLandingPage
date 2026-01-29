@@ -81,7 +81,7 @@
 @media(max-width:599px) and (min-width:580px){
     .services-grid{
       display: grid;
-      gap: 9vw;
+      gap: 5vw;
       overflow: visible;
       position: relative;
       z-index: 0;

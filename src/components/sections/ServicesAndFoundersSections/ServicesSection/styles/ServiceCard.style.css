@@ -141,6 +141,21 @@
   max-height: 500px; /* Enough to cover your longest description */
   margin-top: 1rem;
 }
+.service-card-title {
+  font-size: clamp(1rem, 2vw, 1.5rem);
+  font-weight: 600;
+  z-index: 1;
+  transition: all 0.4s ease;
+  max-height: 200px;
+  opacity: 1;
+  overflow: hidden;
+  transition: max-height 0.4s ease, opacity 0.3s ease;
+}
+.service-card-icon svg {
+  width: 9vw;
+  height: 9vw;
+  display: block;
+}
 }
 /* Icon color classes */
 .text-pink-600 { color: #db2777; }
